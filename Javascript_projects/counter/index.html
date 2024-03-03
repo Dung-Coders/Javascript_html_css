@@ -50,33 +50,25 @@
     <div class="container">
         <h1>People increasing</h1><br>
         <p id="countup">0</p><br>
-        <button onclick="increment()">Like</button>
+        <button onclick="likeDislike()">Like</button>
     </div>
-    <div class="container">
-        <h1>People decreasing</h1><br>
-        <p id="countdown">0</p><br>
-        <button onclick="decrement()">Dislike</button>
-    </div>
-
+    
 <script>
     // Increase
     let countUp = document.getElementById('countup');
 
     let count = 0;
-    function increment(){
-        count = count + 1;
-        countUp.innerText = count;
-        return count;
+    function likeDislike(){
+        if(count){
+            count = count - 1;
+            countUp.innerText = count;
+        }
+        else{
+            count = count + 1;
+            countUp.innerText = count;
+        }
     }
-    // Decrease
-    let countDown = document.getElementById('countdown');
 
-    let counter = 0;
-    function decrement(){
-        counter = counter - 1;
-        countDown.innerText = counter;
-        return counter;
-    }
 </script>
 </body>
 </html>
