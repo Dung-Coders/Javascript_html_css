@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #textBox{
+            font-size: 2em;
+            max-width: 250px;
+        }
+        button{
+            padding: 5px;
+            background-color: rgb(33, 195, 195);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        p{
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    Temperature conversion program. <br>
+    <form>
+        <h1>Temperature conversion:</h1><br>
+        <input type="number" id="textBox" value="0"><br>
+        <input type="radio" id="toFahrenheit" name="unit">
+        <label for="toFahrenheit">Celsius ➡ Fahrenheit</label><br>
+
+        <input type="radio" id="toCelsius" name="unit">
+        <label for="toCelsius">Fahrenheit ➡ Celsius</label><br>
+        <button type="button" onclick="convert()">Submit</button>
+        <p id="result"></p>
+    </form>
+
+<script src="lesson24.js"></script>
+</body>
+</html>
