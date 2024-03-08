@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(washington.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin:0;
+        }
+        #clock-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #clock{
+            font-family: monospace;
+            font-size: 6.5em;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(68, 161, 233);
+            backdrop-filter: blur(5px);
+            background-color: hsla(0, 0%, 100%,0.5);
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock-container">
+        <div id="clock">00:00:00</div>
+    </div>
+
+<script src="lesson53.js"></script>
+</body>
+</html>

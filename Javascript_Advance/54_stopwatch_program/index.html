@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: lightblue;
+        }
+        #myH1{
+            font-size: 4rem;
+            font-family: Arial, sans-serif;
+            color:hsl(258, 85%, 68%)
+        }
+        #container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            border: 5px solid blue;
+            border-radius: 50px;
+            background-color: white;
+        }
+        #display{
+            font-size: 5rem;
+            font-family: monospace;
+            font-weight: bold;
+            color: gray;
+            text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.75);
+            margin-bottom: 25px;
+        }
+        button{
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            min-width: 125px;
+            background-color: hsl(160, 100%, 50%);
+            border-radius: 9px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: hsl(160, 100%, 70%);
+        }
+        button:active{
+            background-color: hsl(160, 100%, 90%);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myH1">Stopwatch</h1>
+    <div id="container">
+        <div id="myH1">h:m:s:ms</div>
+        <div id="display">00:00:00:00</div>
+        <div id="controls">
+            <button id="startBtn" onclick="start()">Start</button>
+            <button id="stopBtn" onclick="stop()">Stop</button>
+            <button id="resetBtn" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    
+
+<script src="lesson54.js"></script>
+</body>
+</html>
