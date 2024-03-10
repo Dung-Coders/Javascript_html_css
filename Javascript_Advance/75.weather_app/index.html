@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: aliceblue;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form{
+            margin: 20px;
+        }
+        .cityInput{
+            padding: 10px;
+            font-size: 2rem;
+            font-weight: bold;
+            width: 200px;
+            border: 2px solid gray;
+            border-radius: 10px;
+        }
+        button[type="submit"]{
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 2rem;
+            background-color: rgb(40, 181, 228);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover{
+           background-color: aqua;
+        }
+        .card{
+            background: linear-gradient(180deg, blue, orange);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px hsla(0, 0%,0%,0.5);
+            min-width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+        p{
+            font-size: 1.5rem;
+            margin: 5px 0;
+        }
+        .cityDisplay, .tempDisplay{
+            font-size: 3rem;
+            font-weight: bold;
+            color: hsla(0, 0%,0%,0.75);
+            margin-bottom: 25px;
+        }
+        .descDisplay{
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .weatherEmoji{
+            font-size: 4rem;
+        }
+        .errorDisplay{
+            font-size: 2rem;
+            font-weight: bold;
+            color:hsl(200, 2%, 25%);
+        }
+    </style>
+</head>
+<body>
+    <form class="weatherForm">
+        <input type="text" class="cityInput" placeholder="Enter city">
+        <button type="submit">Get Weather</button>
+    </form>
+    <div class="card" style="display: none;">
+        <!-- <h1 class="cityDisplay">Miami</h1>
+        <p class="tempDisplay">90℉</p>
+        <p class="humidityDisplay">Humidity: 75%</p>
+        <p class="descDisplay">Clear Skies</p>
+        <p class="weatherEmoji">🌞</p>
+        <p class="errorDisplay">Please enter your city</p> -->
+    </div>
+
+<script src="lesson75.js"></script>
+</body>
+</html>
