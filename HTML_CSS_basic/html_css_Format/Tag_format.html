@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        #container{
+            margin: 50px;
+        }
+        table, thead, tr, td, th{
+            border: 3px solid rgb(238, 111, 111);
+            color: rgb(25, 194, 250);
+        }
+        table{
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <hr>
+        <p><mark>This is markTag</mark></p>
+        <p><em>This is emTag</em></p>
+        <p><i>This is iTag</i></p>
+        <p><b>This is bTag</b></p>
+        <p><u>This is uTag</u></p>
+        <p><strong>This is strongTag</strong></p>
+        <br>
+        <pre>
+            This is preTag
+              This is preTag
+                This is preTag
+                 This is preTag
+                This is preTag
+              This is preTag
+            This is preTag
+        </pre>
+        <hr>
+        <div style="display: flex;justify-content: space-around;">
+            <span>Home</span>
+            <span>About</span>
+            <span>Product</span>
+            <span>Contact</span>
+        </div>
+        <div>
+            <span>Price:</span>
+            <span>$ 100</span>
+            <span>14-02-2026</span>
+        </div>
+        <br>
+        <div>
+            aTag. <br>
+            <a href="https://google.com" style="text-decoration: none;">inside</a><br>
+            <a href="https://google.com" target="_blank">outside</a>
+        </div>
+        <hr>
+        ul...ol...li...Tag <br>
+        <ul>
+            <li>Iphone</li>
+            <li>Samsung</li>
+            <li>Oppo</li>
+            <li>Redme</li>
+        </ul>
+        <ol style="list-style: none;">
+            <li>Iphone</li>
+            <li>Samsung</li>
+            <li>Oppo</li>
+            <li>Redme</li>
+        </ol>
+        texareaTag. <br>
+        <textarea name="" id="" cols="30" rows="10">
+    
+        </textarea>
+        <div>
+            inputTas. <br><br>
+            Username:
+            <input type="text" placeholder="Enter your name"><br><br>
+            Password:
+            <input type="password" placeholder="Enter your password" required><br><br>
+            Email: 
+            <input type="email" placeholder="Enter your email" required><br><br>
+            Submit input: 
+            <button type="submit">Submit</button><br><br>
+            Calendar:
+            <input type="date"><br><br>
+            File input:
+            <input type="file"><br><br>
+            Color input:
+            <input type="color" style="width: 200px;"><br><br>
+            Move input: 
+            <input type="range"><br><br>
+            Chose input: 
+            <input type="number" min="1" max="10" value="1" 
+                    style="text-align: center;
+                    font-size: 18px;
+                    width: 200px;"><br><br>
+            <div>
+                <input type="checkbox">Javascript <br><br>
+                <input type="checkbox">Reactjs <br><br>
+                <input type="checkbox">PHP <br><br>
+            </div>
+            <br><br>
+            <div>
+                <input type="radio" name="one">HTML <br><br>
+                <input type="radio" name="one">CSS <br><br>
+                <input type="radio" name="one">Javascript <br><br>
+                <input type="submit" value="Submit"> :Input submit <br>
+            </div>
+        </div>
+        <br><br>
+        <select name="" id="">
+            <option value="">Korean</option>
+            <option value="">Vietnamese</option>
+            <option value="">English</option>
+            <option value="">Chinese</option>
+        </select>
+        <br><br>
+        <div>
+            All about Buttons: <br><br>
+            <button type="click">Click</button><br><br>
+            <button type="submit">Submit</button><br><br>
+            <button type="button">Reset</button><br><br>
+            <button type="button">Next</button><br><br>
+            <button type="button">Previous</button><br><br>
+        </div>
+        Table1: th=strongTag<br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Math</th>
+                    <th>English</th>
+                    <th>Physic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>#1</th>
+                    <th>10</th>
+                    <th colspan="2">8.0</th>
+                    <!-- <th>9.0</th> -->
+                </tr>
+                <tr>
+                    <th>#2</th>
+                    <th rowspan="2">10</th>
+                    <th>8.0</th>
+                    <th>9.0</th>
+                </tr>
+                <tr>
+                    <th>#3</th>
+                    <!-- <th>10</th> -->
+                    <th>8.0</th>
+                    <th>9.0</th>
+                </tr>
+            </tbody>
+        </table><br><br>
+        Table2: <br>
+        <table>
+            <thead>
+                <tr>
+                    <td>Index</td>
+                    <td>Math</td>
+                    <td>English</td>
+                    <td>Physic</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>#1</th>
+                    <th>10</th>
+                    <th>8.0</th>
+                    <th>9.0</th>
+                </tr>
+                <tr>
+                    <th>#2</th>
+                    <th>10</th>
+                    <th>8.0</th>
+                    <th>9.0</th>
+                </tr>
+                <tr>
+                    <th>#3</th>
+                    <th colspan="3"></th>
+                    <!-- <th>8.0</th> -->
+                    <!-- <th>9.0</th> -->
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="">
+            <source media="(min-width: 375px)" srcset="">
+        </picture>
+        <br><br>
+        iframeTag <br>
+        <iframe src="" frameborder="0"></iframe><br>
+        <iframe width="100%" height="360" src="https://www.youtube.com/embed/O5U7jxWcPoI" title="#8 Stream - TẤT TẦN TẬT về HTML CSS A-Z P1/2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
+        <audio src="">audioTag</audio><br><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29826.014283242086!2d106.64671661083986!3d20.861899299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7af3f0742f19%3A0xa4466af30bedbb1!2zQuG6o28gdMOgbmcgSOG6o2kgUGjDsm5n!5e0!3m2!1svi!2s!4v1710082870789!5m2!1svi!2s" width="640" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <video src="">videoTag</video><br><br>
+        sup & sub Tag <br><br>
+        H<sub>2</sub>O
+        <br><br>
+        x <sup>2</sup><br>
+    </div>
+
+</body>
+</html>
