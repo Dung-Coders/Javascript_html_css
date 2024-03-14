@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quote Generator</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgb(186, 232, 232);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 550px;
+            height: 450px;
+            color: white;
+        }
+        .header{
+            width: 80%;
+            height: 70px;
+            background-color: gray;
+            border: 1px solid white;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 22px;
+            margin: 20px auto;
+        }
+        .main-content{
+            width: 90%;
+            height: 400px;
+            background: #fff;
+            color: gray;
+            text-align: center;
+            border: none;
+            border-radius: 15px;
+        }
+        .text-area{
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+        .person{
+            font-size: 1.6rem;
+            color: red;
+            text-transform: uppercase;
+            margin: 15px;
+        }
+        button{
+            background: hsl(240, 100%, 50%);
+            border: none;
+            border-radius: 12px;
+            font-size: 22px;
+            padding: 8px;
+            color: white;
+        }
+        button:hover{
+            background: hsl(240, 100%, 30%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Javascript Quote Generator</h2>
+        </div>
+        <div class="main-content">
+            <div class="person">Harry Smith</div>
+            <div class="text-area">
+                <span class="quote">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatibus accusantium eveniet sint expedita excepturi officia eligendi nihil. Reprehenderit reiciendis quidem totam, nesciunt nemo animi at, cumque fuga corporis, aut distinctio.
+                </span>
+            </div>
+    
+        </div>
+        <div class="button-area">
+            <button id="new-quote">New Quote</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

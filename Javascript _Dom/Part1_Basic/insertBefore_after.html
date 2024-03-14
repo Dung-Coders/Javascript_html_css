@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Product</li>
+    </ul>
+
+<script>
+
+    let menu = document.getElementById('menu');
+    // menu.after(str);
+    // menu.after(str1, str1, str3, ...);
+    // menu.after(node);
+    // menu.after(node1, node2, node3, ...);
+    menu.after('Hello',' Peter');
+
+    //how about .prepend()
+    // menu.prepend(str);
+    // menu.prepend(str1, str1, str3, ...);
+    // menu.prepend(node);
+    // menu.prepend(node1, node2, node3, ...);
+    // menu.prepend('Hi', ' Doctor')
+
+    //how about .lastChild & firstChild
+    menu.firstChild.textContent = 'Welcome';
+    menu.lastChild.textContent = 'Goodbye!';
+
+    //how about element.insertAdjacentHTML(positionName, text);
+    menu.insertAdjacentHTML('beforeend', '<li>Contact</li>');
+
+    //how about parentNode.replaceChild(newChild, oldChild);
+
+
+
+    //how about originalNode.cloneNode();
+    // let newNode = menu.cloneNode(true);
+    // menu.appendChild(newNode);
+
+    //how about parent.removeChild(childNode);
+    // menu.removeChild(menu.lastElementChild);
+    // menu.removeChild(menu.firstElementChild); 
+
+    //how about parentNode.insertBefore(newNode, existingNode);
+   
+
+
+</script>
+</body>
+</html>

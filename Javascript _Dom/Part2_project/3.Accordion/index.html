@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        body{
+            background: darkslategrey;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .accordion{
+            width: 65%;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 30px;
+        }
+        .accordion-title{
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .question{
+            padding: 18px 0px;
+            font-size: 22px;
+            cursor: pointer;
+            border-bottom: 1px solid #000;
+
+            position: relative;
+        }
+        .question::after{
+            content: '▽';
+
+            position: absolute;
+            right: -5px;
+        }
+        .answer{
+            padding-top: 15px;
+            font-size: 18px;
+            line-height: 1.5;
+            width: 100%;
+
+            height: 0px;
+            overflow: hidden;
+            transition: .5s;
+        }
+
+        /* javascript style link */
+        .accordion .content-container.active .answer{
+            height: 150px;
+        }
+        .accordion .content-container.active .question{
+            font-size: 16px;
+            transition: .5s;
+        }
+        .accordion .content-container.active .question::after{
+            content: '📋';
+            font-size: 30px;
+            transition: .5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <h2 class="accordion-title">Frequently Asked Questions</h2>
+
+        <div class="content-container">
+            <div class="question">What is the return Policy</div>
+            <div class="answer">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis odio aliquid suscipit in! Animi eaque dicta ipsam! Nam eius totam deserunt labore dolore, voluptates nostrum vel minima rem? Alias!
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="question">What is the return Policy</div>
+            <div class="answer">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis odio aliquid suscipit in! Animi eaque dicta ipsam! Nam eius totam deserunt labore dolore, voluptates nostrum vel minima rem? Alias!
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="question">What is the return Policy</div>
+            <div class="answer">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure corporis odio aliquid suscipit in! Animi eaque dicta ipsam! Nam eius totam deserunt labore dolore, voluptates nostrum vel minima rem? Alias!
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
